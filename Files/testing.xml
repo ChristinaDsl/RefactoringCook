@@ -1,0 +1,20 @@
+<Refactoring>
+<Name>refa2</Name>
+<Description>description 2</Description>
+<Uses>use 2</Uses>
+<Mechanics>mechanics 2</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>refa3</Name>
+<Description>description 2</Description>
+<Uses>use 2</Uses>
+<Mechanics>mechanics 2</Mechanics>
+</Refactoring>
+
+<Relation>
+<Type>Before</Type>
+<Source>refa2</Source>
+<Target>refa3</Target>
+<Description>refa2 before refa3</Description>
+</Relation>

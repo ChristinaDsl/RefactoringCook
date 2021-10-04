@@ -1,0 +1,18 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="android-sdk-library" />
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+  </applied-converters>
+  <project-files>
+    <file path="/home/user/IdeaProjects/NewTutorial/.idea/jarRepositories.xml" timestamp="1633166065430" />
+    <file path="/home/user/IdeaProjects/NewTutorial/.idea/gradle.xml" timestamp="1633169903488" />
+    <file path="/home/user/IdeaProjects/NewTutorial/.idea/compiler.xml" timestamp="1620592782747" />
+    <file path="/home/user/IdeaProjects/NewTutorial/.idea/uiDesigner.xml" timestamp="1616848569383" />
+    <file path="/home/user/IdeaProjects/NewTutorial/.idea/misc.xml" timestamp="1620151179710" />
+    <file path="/home/user/IdeaProjects/NewTutorial/.idea/workspace.xml" timestamp="1633278087291" />
+    <file path="/home/user/IdeaProjects/NewTutorial/.idea/artifacts/RefactoringCook.xml" timestamp="1633102301484" />
+  </project-files>
+</conversion>

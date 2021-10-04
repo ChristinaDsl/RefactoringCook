@@ -1,0 +1,117 @@
+{
+  "appInfo" : {
+    "build" : "202.8194.7",
+    "buildDate" : "Tue, 24 Nov 2020 14:43:51 +0200",
+    "productCode" : "IC",
+    "generated" : "Sun, 3 Oct 2021 22:24:09 +0300",
+    "os" : "Linux 4.15.0-159-generic",
+    "runtime" : "JetBrains s.r.o. 11.0.9 11.0.9+11-b944.49"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "DemoProject",
+    "numberOfFileProviders" : 2,
+    "totalNumberOfFiles" : 3,
+    "times" : {
+      "indexingTime" : "3 s 549 ms",
+      "scanFilesTime" : "3 s 261 ms",
+      "pushPropertiesTime" : "134 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Sun, 3 Oct 2021 22:24:05 +0300",
+      "pushPropertiesEnd" : "Sun, 3 Oct 2021 22:24:06 +0300",
+      "scanFilesStart" : "Sun, 3 Oct 2021 22:24:06 +0300",
+      "scanFilesEnd" : "Sun, 3 Oct 2021 22:24:09 +0300",
+      "indexExtensionsStart" : "Sun, 3 Oct 2021 22:24:06 +0300",
+      "indexExtensionsEnd" : "Sun, 3 Oct 2021 22:24:06 +0300",
+      "indexingStart" : "Sun, 3 Oct 2021 22:24:05 +0300",
+      "indexingEnd" : "Sun, 3 Oct 2021 22:24:09 +0300"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "textmate",
+      "partOfTotalIndexingTime" : "100,0%",
+      "partOfTotalContentLoadingTime" : "100,0%",
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : "4,63 kB",
+      "indexingSpeed" : "100,43 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'DemoProject'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "3,06 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "62,6%"
+      }, {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@55c87",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1,57 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "37,4%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "37,3%",
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : "4,63 kB",
+      "indexingSpeed" : "269,46 kB/s"
+    }, {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "37,1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "3,06 kB",
+      "indexingSpeed" : "178,9 kB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "25,6%",
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : "4,63 kB",
+      "indexingSpeed" : "391,75 kB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'DemoProject'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "104 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "textmate",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "3,06 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "TodoIndex",
+        "partOfTotalIndexingTime" : "59,3%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "25,3%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "15,4%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@55c87",
+      "totalNumberOfFiles" : 2,
+      "totalIndexingTime" : "21 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "textmate",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1,57 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "57,3%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "42,7%"
+      } ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}

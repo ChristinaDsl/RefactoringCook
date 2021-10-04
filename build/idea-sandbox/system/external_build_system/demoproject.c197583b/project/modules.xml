@@ -1,0 +1,12 @@
+<project>
+  <component name="ExternalProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DemoProject.iml" filepath="$PROJECT_DIR$/.idea/modules/DemoProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/DemoProject.main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/DemoProject.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/DemoProject.main.main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/DemoProject.main.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/DemoProject.main.test.iml" filepath="$PROJECT_DIR$/.idea/modules/main/DemoProject.main.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DemoProject.test.iml" filepath="$PROJECT_DIR$/.idea/modules/DemoProject.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.DemoProject.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.DemoProject.main.iml" />
+    </modules>
+  </component>
+</project>

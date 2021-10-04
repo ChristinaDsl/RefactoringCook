@@ -1,0 +1,16 @@
+<Refactoring>
+<Name>Replace Type Code with Class</Name>
+<Category>Moving Organizing Data</Category>
+<Description>When a class has a numeric type code that does not affect its behavior, replace the number with a new class</Description>
+<Uses>Primitive Obsession</Uses>
+<Mechanics></Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Replace Array with Object</Name>
+<Category>Moving Organizing Data</Category>
+<Description>When an array's  certain elements mean different things, replace the array with an object that has a field for each element</Description>
+<Uses>Primitive Obsession</Uses>
+<Mechanics>Create a new class to represent the information in the array, Give it a public field for the array,Change all users of the array to use the new class,Compile and test,One by one, add getters and setters for each element of the array, Name the accessors after the purpose of the array element, Change the clients to use the accessors, Compile and test after each change,When all array accesses are replaced by methods, make the array private,Compile,For each element of the array, create a field in the class and change the accessors to use the field,Compile and test after each element is changed,When all elements have been replaced with fields, delete the array</Mechanics>
+</Refactoring>
+

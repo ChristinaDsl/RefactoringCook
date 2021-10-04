@@ -1,0 +1,39 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/NewTutorial">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1qL9KQUfzMyJV4zdo2Wrla5pYeY">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.8194.7" />
+              <option name="buildTimestamp" value="1606221815796" />
+              <frame x="567" y="25" width="1033" height="875" extendedState="6" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1633273647858" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/DemoProject">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1z0Ju6syD1LgauugfL6wAcKnXAe">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.8194.7" />
+              <option name="buildTimestamp" value="1606221812131" />
+              <frame x="67" y="25" width="1533" height="875" extendedState="6" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1633344108148" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/IdeaProjects" />
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/IdeaProjects/DemoProject" />
+        <option value="$USER_HOME$/IdeaProjects/NewTutorial" />
+      </list>
+    </option>
+  </component>
+</application>

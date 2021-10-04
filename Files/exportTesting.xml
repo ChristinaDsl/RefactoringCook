@@ -1,0 +1,23 @@
+<Refactoring>
+<Name>refa159</Name>
+<Category>Composing Methods</Category>
+<Description>description of refa159</Description>
+<Uses>smell 1,smell 2</Uses>
+<Mechanics>step 1,step 2</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>refa160</Name>
+<Category>Composing Methods</Category>
+<Description>description of refa160</Description>
+<Uses>smell 1,smell 2</Uses>
+<Mechanics>step 3,step 1</Mechanics>
+</Refactoring>
+
+<Relation>
+<Type>Before</Type>
+<Source>refa159</Source>
+<Target>refa160</Target>
+<Description>info of this relation</Description>
+</Relation>
+

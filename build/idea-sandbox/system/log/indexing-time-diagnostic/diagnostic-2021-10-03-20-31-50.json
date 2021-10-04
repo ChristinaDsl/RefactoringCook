@@ -1,0 +1,84 @@
+{
+  "appInfo" : {
+    "build" : "202.8194.7",
+    "buildDate" : "Tue, 24 Nov 2020 14:43:34 +0200",
+    "productCode" : "IC",
+    "generated" : "Sun, 3 Oct 2021 20:31:50 +0300",
+    "os" : "Linux 4.15.0-159-generic",
+    "runtime" : "JetBrains s.r.o. 11.0.9 11.0.9+11-b944.49"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "DemoProject",
+    "numberOfFileProviders" : 1,
+    "totalNumberOfFiles" : 1,
+    "times" : {
+      "indexingTime" : "3 s 478 ms",
+      "scanFilesTime" : "3 s 127 ms",
+      "pushPropertiesTime" : "201 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Sun, 3 Oct 2021 20:31:47 +0300",
+      "pushPropertiesEnd" : "Sun, 3 Oct 2021 20:31:47 +0300",
+      "scanFilesStart" : "Sun, 3 Oct 2021 20:31:47 +0300",
+      "scanFilesEnd" : "Sun, 3 Oct 2021 20:31:50 +0300",
+      "indexExtensionsStart" : "Sun, 3 Oct 2021 20:31:47 +0300",
+      "indexExtensionsEnd" : "Sun, 3 Oct 2021 20:31:47 +0300",
+      "indexingStart" : "Sun, 3 Oct 2021 20:31:47 +0300",
+      "indexingEnd" : "Sun, 3 Oct 2021 20:31:50 +0300"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "textmate",
+      "partOfTotalIndexingTime" : "100,0%",
+      "partOfTotalContentLoadingTime" : "100,0%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "1,22 kB",
+      "indexingSpeed" : "19,76 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@3f6f5fe2",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1,22 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "95,0%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "1,22 kB",
+      "indexingSpeed" : "20,79 kB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "5,0%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "1,22 kB",
+      "indexingSpeed" : "397,45 kB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@3f6f5fe2",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "104 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "textmate",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1,22 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "95,0%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "5,0%"
+      } ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}

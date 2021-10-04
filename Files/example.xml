@@ -1,0 +1,15 @@
+<Refactoring>
+<Name>Replace Temp with Query</Name>
+<Category>Composing Methods</Category>
+<Description>When a temporary variable hold the result of an expression,extract the expression into a method,Replace all references to the temp with the expression,The new method can then be used in other methods</Description>
+<Uses>Long Method</Uses>
+<Mechanics>Look for a temporary variable that is assigned to once,Declare the temp as final,Compile to ensure that the temp is only assigned to once,Extract the right-hand side of the assignment into a method,Initially mark the method as private, You may find more use for it later, but you can easily relax the protection later,Compile and test,Use Replace Temp with Query on the temp</Mechanics>
+</Refactoring>
+
+<Relation>
+<Type>Before</Type>
+<Source>Replace Temp with Query</Source>
+<Target>Extract Method</Target>
+<Description></Description>
+</Relation>
+

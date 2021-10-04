@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>org.example.NewTutorial</id>
+    <name>RefactoringCook</name>
+    <vendor></vendor>
+
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Refactoring Cook"  anchor="right" factoryClass="GUI.MyToolWindowFactory">
+        </toolWindow>
+    </extensions>
+
+
+</idea-plugin>

@@ -1,0 +1,16 @@
+<module>
+  <component name="DeprecatedModuleOptionManager">
+    <option key="type" value="JAVA_MODULE" />
+  </component>
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="DemoProject" externalSystemModuleType="sourceSet" externalSystemModuleVersion="unspecified" linkedProjectId=":main:main" linkedProjectPath="$MODULE_DIR$/../../../main" rootProjectPath="$MODULE_DIR$/../../.." />
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../main/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../main/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../main/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../main/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,132 @@
+{
+  "appInfo" : {
+    "build" : "202.8194.7",
+    "buildDate" : "Tue, 24 Nov 2020 14:43:35 +0200",
+    "productCode" : "IC",
+    "generated" : "Sun, 3 Oct 2021 19:38:54 +0300",
+    "os" : "Linux 4.15.0-159-generic",
+    "runtime" : "JetBrains s.r.o. 11.0.9 11.0.9+11-b944.49"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "DemoProject",
+    "numberOfFileProviders" : 2,
+    "totalNumberOfFiles" : 2,
+    "times" : {
+      "indexingTime" : "30 ms",
+      "scanFilesTime" : "3 ms",
+      "pushPropertiesTime" : "1 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Sun, 3 Oct 2021 19:38:54 +0300",
+      "pushPropertiesEnd" : "Sun, 3 Oct 2021 19:38:54 +0300",
+      "scanFilesStart" : "Sun, 3 Oct 2021 19:38:54 +0300",
+      "scanFilesEnd" : "Sun, 3 Oct 2021 19:38:54 +0300",
+      "indexExtensionsStart" : "Sun, 3 Oct 2021 19:38:54 +0300",
+      "indexExtensionsEnd" : "Sun, 3 Oct 2021 19:38:54 +0300",
+      "indexingStart" : "Sun, 3 Oct 2021 19:38:54 +0300",
+      "indexingEnd" : "Sun, 3 Oct 2021 19:38:54 +0300"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "Groovy",
+      "partOfTotalIndexingTime" : "100,0%",
+      "partOfTotalContentLoadingTime" : "100,0%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "194 B",
+      "indexingSpeed" : "15,75 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'main'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "145 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "64,0%"
+      }, {
+        "providerName" : "Module 'DemoProject'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "49 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "36,0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : "79,6%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "194 B",
+      "indexingSpeed" : "19,79 kB/s"
+    }, {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "11,0%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "194 B",
+      "indexingSpeed" : "143,28 kB/s"
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "5,7%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "194 B",
+      "indexingSpeed" : "274,26 kB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "3,7%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "194 B",
+      "indexingSpeed" : "427,44 kB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'main'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "10 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "Groovy",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "145 B",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "80,5%"
+      }, {
+        "indexId" : "TodoIndex",
+        "partOfTotalIndexingTime" : "10,4%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "5,8%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "3,3%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'DemoProject'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "Groovy",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "49 B",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "77,9%"
+      }, {
+        "indexId" : "TodoIndex",
+        "partOfTotalIndexingTime" : "12,0%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "5,7%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "4,4%"
+      } ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}

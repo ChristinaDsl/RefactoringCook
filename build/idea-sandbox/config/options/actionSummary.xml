@@ -1,0 +1,84 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="$Undo">
+        <ActionSummary times="11" last="1633287402932" />
+      </entry>
+      <entry key="CloseProject">
+        <ActionSummary times="2" last="1633279264788" />
+      </entry>
+      <entry key="EditorBackSpace">
+        <ActionSummary times="544" last="1633289706301" />
+      </entry>
+      <entry key="EditorChooseLookupItem">
+        <ActionSummary times="8" last="1633280893368" />
+      </entry>
+      <entry key="EditorCopy">
+        <ActionSummary times="9" last="1633280586324" />
+      </entry>
+      <entry key="EditorCut">
+        <ActionSummary times="3" last="1633280161633" />
+      </entry>
+      <entry key="EditorEnter">
+        <ActionSummary times="56" last="1633283905866" />
+      </entry>
+      <entry key="EditorLineStart">
+        <ActionSummary times="2" last="1633279948526" />
+      </entry>
+      <entry key="EditorPaste">
+        <ActionSummary times="19" last="1633280841629" />
+      </entry>
+      <entry key="EditorRight">
+        <ActionSummary times="1" last="1633279934785" />
+      </entry>
+      <entry key="EditorTab">
+        <ActionSummary times="9" last="1633285897753" />
+      </entry>
+      <entry key="EditorToggleInsertState">
+        <ActionSummary times="4" last="1633279952431" />
+      </entry>
+      <entry key="GotoAction">
+        <ActionSummary times="1" last="1620843823801" />
+      </entry>
+      <entry key="List-selectNextColumn">
+        <ActionSummary times="1" last="1632761347796" />
+      </entry>
+      <entry key="List-selectNextRow">
+        <ActionSummary times="5" last="1632761348340" />
+      </entry>
+      <entry key="List-selectPreviousColumn">
+        <ActionSummary times="4" last="1632761346074" />
+      </entry>
+      <entry key="NewClass">
+        <ActionSummary times="2" last="1633280604638" />
+      </entry>
+      <entry key="NewFile">
+        <ActionSummary times="1" last="1633279158856" />
+      </entry>
+      <entry key="NewModuleInGroup">
+        <ActionSummary times="1" last="1633279126782" />
+      </entry>
+      <entry key="RenameElement">
+        <ActionSummary times="2" last="1633280741089" />
+      </entry>
+      <entry key="SaveAll">
+        <ActionSummary times="16" last="1633285900881" />
+      </entry>
+      <entry key="WelcomeScreen.CreateNewProject">
+        <ActionSummary times="2" last="1633279271505" />
+      </entry>
+      <entry key="WelcomeScreen.OpenProject">
+        <ActionSummary times="1" last="1619782600125" />
+      </entry>
+      <entry key="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+        <ActionSummary times="6" last="1633282284221" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
+        <ActionSummary times="4" last="1632915436533" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.ToolWindowHeader$ShowOptionsAction">
+        <ActionSummary times="2" last="1624218751176" />
+      </entry>
+    </data>
+  </component>
+</application>

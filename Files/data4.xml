@@ -1,0 +1,419 @@
+<Refactoring>
+<Name>refa90</Name>
+<Category>Composing Methods</Category>
+<Description>dfg</Description>
+<Uses>dfg</Uses>
+<Mechanics>[dfg]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Remove Assignments to Parameters</Name>
+<Category>Composing Methods</Category>
+<Description>The code assigns to a parameter. Use a temporary variable instead</Description>
+<Uses></Uses>
+<Mechanics>[Create a temporary variable for the parameter,Replace all references to the parameter, made after the assignment, to the temporaryvariable-Change the assignment to assign to the temporary variable-Compile and test]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Introduce Explaining Variable</Name>
+<Category>Composing Methods</Category>
+<Description>There is a complicated expression. Put the result of the expression, or parts of the expression, in a temporary variable with a name that explains the purpose</Description>
+<Uses></Uses>
+<Mechanics>[Declare a final temporary variable, and set it to the result of part of the complex expression, Replace the result part of the expression with the value of the temp(If the result part of the expression is repeated, you can replace therepeats one at a time), Compile and test, Repeat for other parts of the expression]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Substitute Algorithm</Name>
+<Category>Composing Methods</Category>
+<Description>You want to replace an algorithm with one that is clearer.Replace the body of the method with the new algorithm</Description>
+<Uses></Uses>
+<Mechanics>[Prepare your alternative algorithm. Get it so that it compiles, Run the new algorithm against your tests. If the results are the same, you're finished, If the results aren't the same, use the old algorithm for comparison in testing anddebugging(Run each test case with old and new algorithms and watch bothresults. That will help you see which test cases are causing trouble, andhow), ]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Inline Method</Name>
+<Category>Composing Methods</Category>
+<Description>When a method's body is just as clear as its name, put it into the body of its callers and remove the method</Description>
+<Uses>Middle Man</Uses>
+<Mechanics>[Check that the method is not polymorphic(Don't inline if subclasses override the method; they cannot override a method that isn't there), Find all calls to the method, Replace each call with the method body, Compile and test, Remove the method definition, Change all references of the temp up to its second assignment, Declare the temp at its second assignment, Compile and test, Repeat in stages, each stage renaming at the declaration, and changing references until the next assignment]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Inline Temp</Name>
+<Category>Composing Methods</Category>
+<Description>A temp is assigned to once with a simple expression, and the temp is getting in the way of other refactorings. Replace all references to that temp with the expression</Description>
+<Uses></Uses>
+<Mechanics>[Declare the temp as final if it isn't already, and compile to chech that the temp is really only assigned to once, Find all references to the temp and replace them with the right-hand side of the assignment, Compile and test after each change, Remove the declaration and the assignment of the temp, Compile and test]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Split Temporary Variable</Name>
+<Category>Composing Methods</Category>
+<Description>When a temporary variable is assigned to more than once, but is not a loop variable nor a collecting temporary variable, make a separate temporary variable for each assignment</Description>
+<Uses></Uses>
+<Mechanics>[Change the name of a temp at its declaration and its first assignment, Declare the new temp as final,]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Replace Temp with Query</Name>
+<Category>Composing Methods</Category>
+<Description>When a temporary variable hold the result of an expression,extract the expression into a method.Replace all references to the temp with the expression.The new method can then be used in other methods</Description>
+<Uses>Long Method</Uses>
+<Mechanics>[Look for a temporary variable that is assigned to once, Declare the temp as final, Compile to ensure that the temp is only assigned to once, Extract the right-hand side of the assignment into a method(Initially mark the method as private. You may find more use for it later, but you can easily relax the protection later), Compile and test, Use Replace Temp with Query on the temp]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Replace Method with Method Object</Name>
+<Category>Composing Methods</Category>
+<Description>When a long method uses local variables in such a way that you cannot apply Extract Method, turn the method into its own object so that all the local variables become fields on that object.The method can then be decomposed into other methods on the same object</Description>
+<Uses></Uses>
+<Mechanics>[Create a new class, name it after the method, Give the new class a final field for the object that hosted the original method (the source object) and a field for each temporary variable and each parameter in the method, Give the new class a constructor that takes the source object and each parameter, Give the new class a method named "compute.", Copy the body of the original method into compute. Use the source object field for any invocations of methods on the original object, Compile, Replace the old method with one that creates the new object and calls compute]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Extract Method</Name>
+<Category>Composing Methods</Category>
+<Description>When a code fragment can be grouped together, turn the fragment into a method whose name explains the purpose of the method</Description>
+<Uses>Dublicated Code,Long Method,Feature Envy,Data Clumps,Primitive Obsession,Switch Statements,Temporary Field,Message Chains,Inappropriate Intimacy,Data Class,Comments</Uses>
+<Mechanics>[Create a new method, and name it after the intention of the method (name it by what it does, not by how it does it)(If the code you want to extract is very simple, such as a single message or function call, you should extract it if the name of the newmethod will reveal the intention of the code in a better way. If you can'tcome up with a more meaningful name, don't extract the code.), Copy the extracted code from the source method into the new target method-Scan the extracted code for references to any variables that are local in scope to the source method. These are local variables and parameters to the method-See whether any temporary variables are used only within this extracted code. If so, declare them in the target method as temporary variables, Look to see whether any of these local-scope variables are modified by the extractedcode.If one variable is modified, see whether you can treat the extracted code as a queryand assign the result to the variable concerned. If this is awkward, or if there is more thanone such variable, you can't extract the method as it stands, Pass into the target method as parameters local-scope variables that are read from theextracted code, Compile when you have dealt with all the locally-scoped variables, Replace the extracted code in the source method with a call to the target method(If you have moved any temporary variables over to the target method, look to see whether they were declared outside of the extracted code. If so, you can now remove the declaration), Compile and test]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>refa80</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>df</Description>
+<Uses>dfgd</Uses>
+<Mechanics>[fed]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Introduce Foreign Method</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>When a server class you are using needs an additional method, but you can't modify the class, create a method in the client class with an instance of the server class as its first argument</Description>
+<Uses>Incomplete Library Class</Uses>
+<Mechanics>[Create a method in the client class that does what you need(The method should not access any of the features of the client class. If it needs a value, send it in as a parameter), Make an instance of the server class the first parameter, Comment the method as "foreign method; should be in server."(This way you can use a text search to find foreign methods later if you get the chance to move the method)]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Introduce Local Extension</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>When a server class you are using needs several additional methods, but you can't modify the class, create a new class that contains these extra methods. Make this extension class a subclass or a wrapper of the original</Description>
+<Uses>Incomplete Library Class</Uses>
+<Mechanics>[Create an extension class either as a subclass or a wrapper of the original, Add converting constructors to the extension(A constructor takes the original as an argument. The subclass version calls an appropriate superclass constructor; the wrapper version sets the delegate field to the argument), Add new features to the extension, Replace the original with the extension where needed, Move any foreign methods defined for this class onto the extension]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Inline Class</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>When a class isn't doing very much, move all its features into another class and delete it</Description>
+<Uses>Shotgun Surgery,Lazy Class,Speculative Generality</Uses>
+<Mechanics>[Declare the public protocol of the source class onto the absorbing class. Delegate all these methods to the source class(If a separate interface makes sense for the source class methods, use Extract Interface before inlining), Change all references from the source class to the absorbing class(Declare the source class private to remove out-of-package references. Also change the name of the source class so the compilercatches any dangling references to the source class), Compile and test, Use Move Method and Move Field to move features from the source class to the absorbing class until there is nothing left, Hold a short, simple funeral service]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Remove Middle Man</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>When a class is doing too much simple delegation, get the client to call the delegate directly</Description>
+<Uses>Middle Man</Uses>
+<Mechanics>[Create an accessor for the delegate, For each client use of a delegate method, remove the method from the server and replace the call in the client to call method on the delegate, Compile and test after each method]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Move Field</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>When a field is, or will be, used by another class more than the class on which it is defined, create a new field in the target class, and change all its users</Description>
+<Uses>Shotgun Surgery,Parallel Inheritance Hierarchies,Inappropriate Intimacy</Uses>
+<Mechanics>[If the field is public, use Encapsulate Field(If you are likely to be moving the methods that access it frequently or if a lot of methods access the field, you may find it useful to use Self Encapsulate Field), Compile and test., Create a field in the target class with getting and setting methods., Compile the target class., Determine how to reference the target object from the source(An existing field or method may give you the target. If not, see whether you can easily create a method that will do so. Failing that, you need to create a new field in the source that can store the target. Thismay be a permanent change, but you can also do it temporarily until youhave refactored enough to remove it), Remove the field on the source class., Replace all references to the source field with references to the appropriate method on the target(For accesses to the variable, replace the reference with a call tothe target object's getting method; for assignments, replace the referencewith a call to the setting method)(If the field is not private, look in all the subclasses of the source for references), Compile and test]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Move Method</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>When a method is, or will be, using or used by more features of another class than the class on which it is defined, create a new method with a similar body in the class it uses most. Either turn the old method i nto a simple delegation, or remove it altogether</Description>
+<Uses>Shotgun Surgery,Feature Envy,Switch Statements,Parallel Inheritance Hierarchies,Message Chains,Inappropriate Intimacy,Alternative Classes with Differrent  Interfaces,Incomplete Library Class,Data Class</Uses>
+<Mechanics>[Examine all features used by the source method that are defined on the source class.Consider whether they also should be moved(If a feature is used only by the method you are about to move, you might as well move it, too. If the feature is used by other methods, consider moving them as well. Sometimes it is easier to move a clutch ofmethods than to move them one at a time.), Check the sub- and superclasses of the source class for other declarations of the method(If there are any other declarations, you may not be able to make the move, unless the polymorphism can also be expressed on the target), Declare the method in the target class(You may choose to use a different name, one that makes more sense in the target class), Copy the code from the source method to the target. Adjust the method to make it work in its new home(If the method uses its source, you need to determine how to reference the source object from the target method. If there is no mechanism in the target class, pass the source object reference to thenew method as a parameter)(If the method includes exception handlers, decide which classshould logically handle the exception. If the source class should beresponsible, leave the handlers behind.), Compile the target class, Determine how to reference the correct target object from the source(There may be an existing field or method that will give you the target. If not, see whether you can easily create a method that will do so. Failing that, you need to create a new field in the source that can storethe target. This may be a permanent change, but you can also make ittemporarily until you have refactored enough to remove it), Turn the source method into a delegating method., Compile and test., Decide whether to remove the source method or retain it as a delegating method(Leaving the source as a delegating method is easier if you havemany references.), If you remove the source method, replace all the references with references to the target method(You can compile and test after changing each reference, although it is usually easier to change all references with one search and replace), Compile and test]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Extract Class</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>When a class doing work that should be done by two, create a new class and move the relevant fields and methods from the old class into the newclass</Description>
+<Uses>Large Class</Uses>
+<Mechanics>[Decide how to split the responsibilities of the class, Create a new class to express the split-off responsibilities(If the responsibilities of the old class no longer match its name, rename the old class), Make a link from the old to the new class(You may need a two-way link. But don't make the back link until you find you need it), Use Move Field on each field you wish to move, Compile and test after each move, Use Move Method to move methods over from old to new. Start with lower-level methods (called rather than calling) and build to the higher level, Compile and test after each move, Review and reduce the interfaces of each class(If you did have a two-way link, examine to see whether it can be made one way), Decide whether to expose the new class. If you do expose the class, decide whether to expose it as a reference object or as an immutable value object]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Hide Delegate</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>When a client is calling a delegate class of an object, create methods on the server to hide the delegate</Description>
+<Uses>Message Chains,Inappropriate Intimacy</Uses>
+<Mechanics>[For each method on the delegate, create a simple delegating method on the server, Adjust the client to call the server(If the client is not in the same package as the server, consider changing the delegate method's access to package visibility), Compile and test after adjusting each method, If no client needs to access the delegate anymore, remove the server's accessor for the delegate, Compile and test]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Replace Nested Conditional with Guard Clauses</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>A method has conditional behavior that does not make clear the normal path of execution. Use guard clauses for all the special cases</Description>
+<Uses></Uses>
+<Mechanics>[step6]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Remove Control Flag</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>You have a variable that is acting as a control flag for a series of boolean expressions. Use a break or return instead</Description>
+<Uses></Uses>
+<Mechanics>[step6]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Introduce Assertion</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>A section of code assumes something about the state of the program.Make the assumption explicit with an assertion</Description>
+<Uses></Uses>
+<Mechanics>[step6]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Decompose Conditional</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>You have a complicated conditional (if-then-else) statement.Extract methods from the condition, then part, and else parts</Description>
+<Uses></Uses>
+<Mechanics>[step6]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Consolidate Duplicate Conditional Fragments</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>The same fragment of code is in all branches of a conditional expression. Move it outside of the expression</Description>
+<Uses></Uses>
+<Mechanics>[step6]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Introduce Null Object</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>When repeated checks for a null value exist, replace the null value with a null object</Description>
+<Uses>Switch Statements,Temporary Field</Uses>
+<Mechanics>[step6]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Replace Conditional with Polymorphism</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>A conditional chooses different behavior depending on the type of an object. Move each leg of the conditional to an overriding method in a subclass. Make the original method abstract</Description>
+<Uses>Switch Statements</Uses>
+<Mechanics>[step6]</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>Consolidate Conditional Expression</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>You have a sequence of conditional tests with the same result.Combine them into a single conditional expression and extract it</Description>
+<Uses></Uses>
+<Mechanics>[step6]</Mechanics>
+</Refactoring>
+
+<Relation>
+<Type>After</Type>
+<Source>refa90</Source>
+<Target>refa80</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Remove Assignments to Parameters</Source>
+<Target>Extract Method</Target>
+<Description>If you see an assignment to a parameter into the extracted code, you sho</Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Introduce Explaining Variable</Source>
+<Target>Replace Temp with Query</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Instead of</Type>
+<Source>Introduce Explaining Variable</Source>
+<Target>Extract Method</Target>
+<Description>When local variables make it difficult to use Extract Method, use Introduce Explaining Variable instead of it</Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Substitute Algorithm</Source>
+<Target>Extract Method</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Inline Method</Source>
+<Target>Extract Method</Target>
+<Description>If there are various methods whose code is too simple/trivial to justify their existence, eliminating them with Inline Method, will make it easier to export, then, the desired code to new methods using the Extract Method</Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Inline Method</Source>
+<Target>Replace Method with Method Object</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Inline Temp</Source>
+<Target>Extract Method</Target>
+<Description>If there are various temporary variables whose value is a simple expression, eliminating them with Inline Temp will make it easier to export, then, the desired code to new methods using the Extract Method</Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Split Temporary Variable</Source>
+<Target>Replace Temp with Query</Target>
+<Description>If a temp is set more than once consider Split Temporary Variable, before applying Replace Temp with Query</Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Replace Temp with Query</Source>
+<Target>Extract Method</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Instead of</Type>
+<Source>Replace Method with Method Object</Source>
+<Target>Extract Method</Target>
+<Description>When you have a long method that uses local variables in such a way that you cannot apply Extract Method, use Replace Method with Method Object instead</Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Extract Method</Source>
+<Target>Move Method</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Extract Method</Source>
+<Target>Introduce Parameter Object</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Extract Method</Source>
+<Target>Pull Up Method</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Introduce Local Extension</Source>
+<Target>Introduce Foreign Method</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Introduce Local Extension</Source>
+<Target>Introduce Foreign Method</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Remove Middle Man</Source>
+<Target>Hide Delegate</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Remove Middle Man</Source>
+<Target>Hide Delegate</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Move Method</Source>
+<Target>Extract Method</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Move Method</Source>
+<Target>Encapsulate Field</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Move Method</Source>
+<Target>Replace Array with Object</Target>
+<Description>Use 'Move Method' when you want to add behavior to the new objects created after 'Replace Array with Object'</Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Move Method</Source>
+<Target>Introduce Parameter Object</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Instead of</Type>
+<Source>Move Method</Source>
+<Target>Preserve Whole Object</Target>
+<Description>If a called method uses lots of values from another object maybe its a signal that instead of using Preserve Whole Object, the called method maybe should be defined on the object from which the values come, using Move Method</Description>
+</Relation>
+
+<Relation>
+<Type>After</Type>
+<Source>Extract Class</Source>
+<Target>Hide Delegate</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Instead of</Type>
+<Source>Extract Class</Source>
+<Target>Extract Subclass</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Introduce Assertion</Source>
+<Target>Extract Method</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Consolidate Duplicate Conditional Fragments</Source>
+<Target>Decompose Conditional</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Consolidate Conditional Expression</Source>
+<Target>Decompose Conditional</Target>
+<Description></Description>
+</Relation>
+
+<Relation>
+<Type>Before</Type>
+<Source>Consolidate Conditional Expression</Source>
+<Target>Extract Method</Target>
+<Description></Description>
+</Relation>
+

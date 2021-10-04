@@ -1,0 +1,23 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="BuildView.Splitter.Proportion" value="0.23388202" />
+    <property name="UITheme.relaunch" value="true" />
+    <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="defaultJdkConfigured" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/IdeaProjects/NewTutorial" />
+    <property name="file.gist.reindex.count" value="34" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="installed.kotlin.plugin.version" value="1.3.72-release-IJ2020.1-6" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
+    <property name="lastSeenTip" value="Kotlin_Java_convert.html" />
+    <property name="lastTimeTipsWereShown" value="1633273659246" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/NewTutorial" />
+    <property name="packagesearch.endpoint.url.fulltext" value="https://package-search.services.jetbrains.com/api/search/idea/fulltext" />
+    <property name="packagesearch.endpoint.url.suggest" value="https://package-search.services.jetbrains.com/api/search/idea/suggest" />
+    <property name="packagesearch.status.updated.ts" value="1632913669320" />
+    <property name="project.wizard.group" value="JAVA_MODULE" />
+    <property name="seenTips" value="neue-FinishBySmartEnter.html,neue-smart_selection.html,neue-CtrlDotInLookups.html,neue-Rename.html,neue-NextPrevError.html,neue-HighlightThrows.html,neue-CopyClass.html,neue-RecentFiles.html,neue-CtrlW.html,neue-OverrideImplementMethods.html,neue-MoveUpDown.html,neue-LensMode.html,neue-CamelHumpsInCodeCompletion.html,neue-SecondSmartCompletionArrayMember.html,neue-IntroduceVariableIncompleteCode.html,neue-DeleteLine.html,neue-FavoritesToolWindow2.html,neue-GoToAction.html,neue-LayoutCode.html,neue-DragToOpen.html,neue-BreakpointIntentions.html,neue-Multicursor.html,neue-ExternalJavaDoc.html,neue-FindInPath.html,neue-AltInsertInEditor.html,neue-QuickJavaDoc.html,neue-SpellcheckerDictionaries.html,neue-CommentCode.html,neue-SecondBasicClassNameCompletion.html,neue-FixDocComment.html,neue-CodeCompletion.html,neue-SpeedSearch.html,neue-ConfiguringTerminal.html,neue-HighlightUsagesInFile.html,neue-MultiselectionWords.html,neue-SecondSmartCompletionAsList.html,neue-JarDiff.html,InjectSQLLanguage.html,neue-GoToClass.html,neue-HighlightImplements.html,neue-EditorConfig.html,Kotlin_Java_convert.html" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+  </component>
+</application>

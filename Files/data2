@@ -1,0 +1,31 @@
+<Refactoring>
+<Name>refa8</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>v</Description>
+<Uses>v</Uses>
+<Mechanics>v</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>refa9</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>v</Description>
+<Uses>v</Uses>
+<Mechanics>v</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>refa6</Name>
+<Category>Simplifying Conditional Expressions</Category>
+<Description>b</Description>
+<Uses>v</Uses>
+<Mechanics>c</Mechanics>
+</Refactoring>
+
+<Relation>
+<Type>After</Type>
+<Source>refa9</Source>
+<Target>refa8</Target>
+<Description></Description>
+</Relation>
+

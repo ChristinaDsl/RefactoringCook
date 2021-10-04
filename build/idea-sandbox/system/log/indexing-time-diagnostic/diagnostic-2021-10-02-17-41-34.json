@@ -1,0 +1,84 @@
+{
+  "appInfo" : {
+    "build" : "202.8194.7",
+    "buildDate" : "Tue, 24 Nov 2020 14:43:40 +0200",
+    "productCode" : "IC",
+    "generated" : "Sat, 2 Oct 2021 17:41:34 +0300",
+    "os" : "Linux 4.15.0-159-generic",
+    "runtime" : "JetBrains s.r.o. 11.0.9 11.0.9+11-b944.49"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "NewTutorial",
+    "numberOfFileProviders" : 1,
+    "totalNumberOfFiles" : 1,
+    "times" : {
+      "indexingTime" : "9 s 658 ms",
+      "scanFilesTime" : "9 s 399 ms",
+      "pushPropertiesTime" : "66 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Sat, 2 Oct 2021 17:41:25 +0300",
+      "pushPropertiesEnd" : "Sat, 2 Oct 2021 17:41:25 +0300",
+      "scanFilesStart" : "Sat, 2 Oct 2021 17:41:25 +0300",
+      "scanFilesEnd" : "Sat, 2 Oct 2021 17:41:34 +0300",
+      "indexExtensionsStart" : "Sat, 2 Oct 2021 17:41:25 +0300",
+      "indexExtensionsEnd" : "Sat, 2 Oct 2021 17:41:25 +0300",
+      "indexingStart" : "Sat, 2 Oct 2021 17:41:25 +0300",
+      "indexingEnd" : "Sat, 2 Oct 2021 17:41:34 +0300"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "XML",
+      "partOfTotalIndexingTime" : "100,0%",
+      "partOfTotalContentLoadingTime" : "100,0%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "18,18 kB",
+      "indexingSpeed" : "469,08 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'NewTutorial'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "18,18 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "filetypes",
+      "partOfTotalIndexingTime" : "60,2%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "18,18 kB",
+      "indexingSpeed" : "778,63 MB/s"
+    }, {
+      "indexId" : "FilenameIndex",
+      "partOfTotalIndexingTime" : "39,8%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "18,18 kB",
+      "indexingSpeed" : "1,18 GB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'NewTutorial'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "131 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "18,18 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "filetypes",
+        "partOfTotalIndexingTime" : "60,2%"
+      }, {
+        "indexId" : "FilenameIndex",
+        "partOfTotalIndexingTime" : "39,8%"
+      } ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}

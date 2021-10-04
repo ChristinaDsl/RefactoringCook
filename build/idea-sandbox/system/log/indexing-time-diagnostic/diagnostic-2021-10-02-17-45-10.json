@@ -1,0 +1,170 @@
+{
+  "appInfo" : {
+    "build" : "202.8194.7",
+    "buildDate" : "Tue, 24 Nov 2020 14:43:47 +0200",
+    "productCode" : "IC",
+    "generated" : "Sat, 2 Oct 2021 17:45:10 +0300",
+    "os" : "Linux 4.15.0-159-generic",
+    "runtime" : "JetBrains s.r.o. 11.0.9 11.0.9+11-b944.49"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "NewTutorial",
+    "numberOfFileProviders" : 2,
+    "totalNumberOfFiles" : 2,
+    "times" : {
+      "indexingTime" : "7 s 911 ms",
+      "scanFilesTime" : "7 s 491 ms",
+      "pushPropertiesTime" : "28 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Sat, 2 Oct 2021 17:45:02 +0300",
+      "pushPropertiesEnd" : "Sat, 2 Oct 2021 17:45:02 +0300",
+      "scanFilesStart" : "Sat, 2 Oct 2021 17:45:02 +0300",
+      "scanFilesEnd" : "Sat, 2 Oct 2021 17:45:10 +0300",
+      "indexExtensionsStart" : "Sat, 2 Oct 2021 17:45:02 +0300",
+      "indexExtensionsEnd" : "Sat, 2 Oct 2021 17:45:02 +0300",
+      "indexingStart" : "Sat, 2 Oct 2021 17:45:02 +0300",
+      "indexingEnd" : "Sat, 2 Oct 2021 17:45:10 +0300"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "JAVA",
+      "partOfTotalIndexingTime" : "100,0%",
+      "partOfTotalContentLoadingTime" : "77,1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,5 kB",
+      "indexingSpeed" : "26,34 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'NewTutorial.main'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4,5 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "22,9%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "18,17 kB",
+      "indexingSpeed" : "1,14 GB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'NewTutorial'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "18,17 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : "50,7%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,5 kB",
+      "indexingSpeed" : "51,94 kB/s"
+    }, {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "29,7%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,5 kB",
+      "indexingSpeed" : "88,53 kB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "6,4%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,5 kB",
+      "indexingSpeed" : "413,86 kB/s"
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : "5,5%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,5 kB",
+      "indexingSpeed" : "475,28 kB/s"
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "4,9%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,5 kB",
+      "indexingSpeed" : "540,6 kB/s"
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : "1,8%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,5 kB",
+      "indexingSpeed" : "1,44 MB/s"
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,5 kB",
+      "indexingSpeed" : "2,81 MB/s"
+    }, {
+      "indexId" : "filetypes",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "18,17 kB",
+      "indexingSpeed" : "1,73 GB/s"
+    }, {
+      "indexId" : "FilenameIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "18,17 kB",
+      "indexingSpeed" : "3,34 GB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'NewTutorial.main'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "351 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4,5 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "50,7%"
+      }, {
+        "indexId" : "TodoIndex",
+        "partOfTotalIndexingTime" : "29,8%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "6,4%"
+      }, {
+        "indexId" : "java.null.method.argument",
+        "partOfTotalIndexingTime" : "5,5%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "4,9%"
+      }, {
+        "indexId" : "java.fun.expression",
+        "partOfTotalIndexingTime" : "1,8%"
+      } ],
+      "fastIndexers" : [ "java.binary.plus.expression" ]
+    }, {
+      "providerName" : "Module 'NewTutorial'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "2 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "18,17 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "filetypes",
+        "partOfTotalIndexingTime" : "65,8%"
+      }, {
+        "indexId" : "FilenameIndex",
+        "partOfTotalIndexingTime" : "34,2%"
+      } ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}

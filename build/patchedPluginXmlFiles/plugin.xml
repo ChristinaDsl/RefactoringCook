@@ -1,0 +1,14 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;b
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="202.8194" until-build="202.*"/>
+  <id>org.example.NewTutorial</id>
+  <name>RefactoringCook</name>
+  <vendor/>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="Refactoring Cook" anchor="right" factoryClass="GUI.MyToolWindowFactory"/>
+  </extensions>
+</idea-plugin>

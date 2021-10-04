@@ -1,0 +1,23 @@
+<Refactoring>
+<Name>newRefactoring2</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>This is also a new refactoring.This refactoring is mine.</Description>
+<Uses>smell 3,smell 2</Uses>
+<Mechanics>Here you can find some steps on how to apply this refactoring on your code.</Mechanics>
+</Refactoring>
+
+<Refactoring>
+<Name>newRefactoring</Name>
+<Category>Moving Features Between Objects</Category>
+<Description>This is a new refactoring.</Description>
+<Uses>smell 1,smell 2,smell 3</Uses>
+<Mechanics>Here you can find some steps on how to apply the newRefactoring.</Mechanics>
+</Refactoring>
+
+<Relation>
+<Type>Before</Type>
+<Source>newRefactoring2</Source>
+<Target>Introduce Local Extension</Target>
+<Description></Description>
+</Relation>
+
